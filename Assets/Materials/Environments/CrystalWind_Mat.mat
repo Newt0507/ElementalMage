@@ -7,11 +7,11 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Water_Mat
-  m_Shader: {fileID: 4800000, guid: a75b0c5717df4cf4180a870fc371dba1, type: 3}
+  m_Name: CrystalWind_Mat
+  m_Shader: {fileID: 4800000, guid: 329270fcc5fe27b4b8f57a6faabe7578, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
-  m_LightmapFlags: 4
+  m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -25,7 +25,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Cubes:
-        m_Texture: {fileID: 2800000, guid: 464ac292797d7d64a815c4064562d285, type: 3}
+        m_Texture: {fileID: 2800000, guid: ea926f5dcb2bfab47bd3ab6e6e823aa7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -81,11 +81,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TextureSample6:
-        m_Texture: {fileID: 2800000, guid: 8e2d46f8740829c41ba5c938af7a77b3, type: 3}
+        m_Texture: {fileID: 2800000, guid: 3e63b3e63dbd9cc45a0cd867c6c208f6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TopTexture0:
-        m_Texture: {fileID: 2800000, guid: 8e2d46f8740829c41ba5c938af7a77b3, type: 3}
+        m_Texture: {fileID: 2800000, guid: 3e63b3e63dbd9cc45a0cd867c6c208f6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TopTexture1:
@@ -126,5 +126,7 @@ Material:
     - __dirty: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color0: {r: 0.6313726, g: 1, b: 0.92549026, a: 1}
+    - _Color1: {r: 0.7264151, g: 0.7264151, b: 0.7264151, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []

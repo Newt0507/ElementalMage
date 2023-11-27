@@ -381,7 +381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32a7d09d10e6fde4d8c9b7ec9b5b15f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _monsterInfo: {fileID: 11400000, guid: 60d770cca48bec6489e2f84724dd0a8d, type: 2}
+  monsterInfo: {fileID: 11400000, guid: 60d770cca48bec6489e2f84724dd0a8d, type: 2}
 --- !u!1001 &1383217488405527286
 PrefabInstance:
   m_ObjectHideFlags: 0

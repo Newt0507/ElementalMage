@@ -132,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 648242947}
+  - component: {fileID: 648242948}
   m_Layer: 0
   m_Name: LoadingController
   m_TagString: Untagged
@@ -155,6 +156,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &648242948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648242946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 588b1d5c2a145e8498895a37b612ac6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 9029551287964168149}
+  progressText: {fileID: 9029551286825861614}
+  playerInfo: {fileID: 11400000, guid: 7a1984ae148a56341b5dcc8423a14f4e, type: 2}
 --- !u!1 &836147950
 GameObject:
   m_ObjectHideFlags: 0

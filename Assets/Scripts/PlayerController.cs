@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     public static PlayerController Instance { get; private set; }
     
     //Player Info
-    [SerializeField] private PlayerInfo _playerInfo;
+    [SerializeField] private PlayerInfo playerInfo;
 
     //Di chuyển
     private Vector3 _direction;
@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
     {
         Instance = this;
 
-        _playerInfo.ResetData();
+        playerInfo.ResetData();
 
         _rb = gameObject.GetComponent<Rigidbody>();
         _anim = gameObject.GetComponent<Animator>();
@@ -42,6 +42,7 @@ public class PlayerController : MonoBehaviour
     {
         Movement();
     }
+
     private void Movement()
     {
         //Lấy input di chuyển
@@ -56,7 +57,7 @@ public class PlayerController : MonoBehaviour
         Quaternion targetRotation = Quaternion.LookRotation(_direction);
 
         //Di chuyển theo hướng của input
-        _rb.MovePosition(_rb.position + _direction * _playerInfo.speed * Time.fixedDeltaTime);
+        _rb.MovePosition(_rb.position + _direction * playerInfo.speed * Time.fixedDeltaTime);
         _rb.MoveRotation(targetRotation); //Xoay player theo hướng di chuyển
     }
 
@@ -93,21 +94,21 @@ public class PlayerController : MonoBehaviour
     public void TakeDamage(int damageAmount)
     {
         //Nhận sát thương
-        _playerInfo.currentHp -= damageAmount;
+        playerInfo.currentHp -= damageAmount;
 
         //Hết máu thì xóa player khỏi Scene 
-        if (_playerInfo.currentHp <= 0)
+        if (playerInfo.currentHp <= 0)
             Destroy(gameObject);
     }
 
     public void Heal(int healAmount)
     {
         //Hồi máu
-        _playerInfo.currentHp += healAmount;
+        playerInfo.currentHp += healAmount;
 
         //Nếu hồi quá _maxHP thì k tăng
-        if (_playerInfo.currentHp >= _playerInfo.maxHp)
-            _playerInfo.currentHp = _playerInfo.maxHp;
+        if (playerInfo.currentHp >= playerInfo.maxHp)
+            playerInfo.currentHp = playerInfo.maxHp;
     }
 
     private void OnAnimatorMove()
