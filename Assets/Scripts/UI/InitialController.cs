@@ -3,10 +3,13 @@ using UnityEngine.SceneManagement;
 
 public class InitialController : MonoBehaviour
 {
+    [SerializeField] private PlayerInfo playerInfo;
+
     private void Start()
     {
-        SceneManager.LoadScene(SceneEnum.LoadingScene.ToString());
+        if(playerInfo.element == "")
+            playerInfo.InitProperties();
 
-        //Play music, sound,..
+        SceneManager.LoadScene(SceneEnum.LoadingScene.ToString());
     }
 }

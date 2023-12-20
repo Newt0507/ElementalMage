@@ -29,4 +29,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RewardScene.unity
     guid: d4b987d7b8c04b741bf19dea63617176
+  - enabled: 1
+    path: Assets/Scenes/Stage1Scene.unity
+    guid: 00b09776f6729af4a967098e85e27204
+  - enabled: 1
+    path: Assets/Scenes/Stage2Scene.unity
+    guid: 1de3a158be5f0c0499c33c6bad9be22a
+  - enabled: 1
+    path: Assets/Scenes/Stage3Scene.unity
+    guid: 6f5e8af49a9794242b8858a89eaea98e
   m_configObjects: {}

@@ -9,26 +9,25 @@ public class LoadingController : MonoBehaviour
 {
     public static LoadingController Instance { get; private set; }
 
-    [SerializeField] private Slider slider;
-    [SerializeField] private TMP_Text progressText;
-
     [SerializeField] private PlayerInfo playerInfo;
 
+    [SerializeField] private Slider slider;
+    [SerializeField] private TMP_Text progressText;
 
     // Start is called before the first frame update
     private void Start()
     {
         Instance = this;
-
-        if(playerInfo.element == "")
-            StartCoroutine(LoadingAsync(SceneEnum.ChooseELementScene.ToString()));
-        else
+        if(playerInfo.element != "")
             StartCoroutine(LoadingAsync(SceneEnum.HomeScene.ToString()));
+        else
+            StartCoroutine(LoadingAsync(SceneEnum.ChooseELementScene.ToString()));
     }
 
-    public IEnumerator LoadingAsync(string HomeScene)
+    //Load Async Scene
+    public IEnumerator LoadingAsync(string scene)
     {
-        AsyncOperation operation = SceneManager.LoadSceneAsync(HomeScene);
+        AsyncOperation operation = SceneManager.LoadSceneAsync(scene);
         
         while (!operation.isDone)
         {

@@ -10,4 +10,6 @@ public enum SceneEnum
     PowerScene,
     RewardScene,
     Stage1Scene,
+    Stage2Scene,
+    Stage3Scene,
 }
