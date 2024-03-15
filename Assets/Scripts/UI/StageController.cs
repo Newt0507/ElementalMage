@@ -25,8 +25,14 @@ public class StageController : MonoBehaviour
 
     private void Update()
     {
-        if (player == null || monsterSpawner == null)
-        {            
+        if (player == null)
+        {
+            SoundManager.Instance.SetActiveVFXSound(false);
+            StartCoroutine(Reward());
+        }
+
+        if (SceneManager.GetActiveScene().name == SceneEnum.Stage3Scene.ToString() && monsterSpawner.transform.childCount <= 0)
+        {
             SoundManager.Instance.SetActiveVFXSound(false);
             StartCoroutine(Reward());
         }

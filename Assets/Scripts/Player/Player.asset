@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70bcddc277cd7964b83d0de85a2d62fa, type: 3}
   m_Name: Player
   m_EditorClassIdentifier: 
-  element: Wind
-  baseMaxHp: 200
-  baseDamage: 50
-  baseSpeed: 8
-  currentHp: 200
-  maxHp: 200
-  damage: 50
-  speed: 8
-  energy: 15
-  gold: 3000
+  element: 
+  baseMaxHp: 150
+  baseDamage: 30
+  baseSpeed: 4
+  currentHp: 0
+  maxHp: 0
+  damage: 0
+  speed: 0
+  energy: 0
+  gold: 0
   gem: 0
